@@ -1,0 +1,26 @@
+/* Full-height layout */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Flex column layout to push footer down */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Make main container grow */
+router-outlet + .container {
+  flex: 1;
+}
+
+/* Footer styling */
+.footer {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+}
